@@ -136,3 +136,4 @@ The maze was successfully traversed!
 3033333302222
 3000000000000
 3333333333333
+
