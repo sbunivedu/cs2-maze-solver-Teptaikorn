@@ -90,5 +90,5 @@ Test your solution with the provided maze files. If your solution seems correct,
 
 ## Optional Task
 Modify the recursive solution to print out the path of the final solution as it is discovered, without storing it.
-
+[![Run on Repl.it](https://repl.it/badge/github/sbunivedu/cs2-maze-solver-Teptaikorn)](https://repl.it/github/sbunivedu/cs2-maze-solver-Teptaikorn)
 
