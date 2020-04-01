@@ -85,7 +85,7 @@ public class MazeSolver{
 		} else {
     			return false;
 		}
-	}
+	 }
     }
 
   /**
