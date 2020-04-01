@@ -1,6 +1,4 @@
-OpenJDK Runtime Environment (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1)
- javac -classpath .:/run_dir/junit-4.12.jar:target/dependency/* -d . Main.java Maze.java MazeSolver.java Position.java
- java -classpath .:/run_dir/junit-4.12.jar:target/dependency/* Main
+ java MazeTester
 Enter the name of the file containing the maze: testfile.txt
 
 10110
@@ -136,4 +134,3 @@ The maze was successfully traversed!
 3033333302222
 3000000000000
 3333333333333
-

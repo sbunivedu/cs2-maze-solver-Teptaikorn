@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.Deque;
+import java.util.*;
 
 /**
  * MazeSolver attempts to recursively traverse a Maze. The goal is to get from the
@@ -62,8 +63,30 @@ public class MazeSolver{
    * @return true if the maze has been solved
    */
    public boolean traverse_rc(int row, int column){
-     return false;
-   }
+		if (!maze.validPosition(row, column)) {
+			return false;
+		} else if ((maze.getRows() - row) == 1 && (maze.getColumns() - column) == 1) {
+			maze.markPath(row, column);
+			return true;
+		} else {
+			maze.tryPosition(row, column);
+			if (traverse_rc(row, column + 1)) {
+				maze.markPath(row, column);
+				return true;
+			} else if (traverse_rc(row, column - 1)) {
+				maze.markPath(row, column);
+				return true;
+			} else if (traverse_rc(row + 1, column)) {
+				maze.markPath(row, column);
+				return true;
+			} else if (traverse_rc(row - 1, column)) {
+				maze.markPath(row, column);
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
 
   /**
    * Push a new attempted move onto the stack
